@@ -1,0 +1,378 @@
+/* =========================================
+            Allgemeines
+=========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: "inter";
+}
+
+@font-face {
+    font-family: inter;
+    src: url("../fonts/Inter-Regular.ttf");
+}
+
+html {
+    font-size: 10px;
+}
+
+button {
+    border: none;
+}
+
+/* =========================================
+            Header & Navigationsleiste
+=========================================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+    font-size: 1.5rem;
+    margin: 0 6rem;
+}
+
+header h1 {
+    color: #4338CA;
+    font-size: 2rem;
+
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+header nav button:hover {
+    cursor: pointer;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.btn_contact {
+    color: white;
+    padding: 1rem 5rem;
+    border-radius: 25px;
+    background-color: #4338CA;
+}
+
+/* =========================================
+            Main Ich bin Franz
+=========================================== */
+main {
+    font-size: 1.5rem;
+}
+
+.section_ich_bin-franz {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10vh;
+    /* background-color: aquamarine; */
+}
+
+.section_uberMich {
+    display: flex;
+    justify-content: space-around;
+    margin: 10rem;
+    /* background-color: aqua; */
+}
+
+.section_ich_bin-franz article {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.section_ich_bin-franz article button {
+    font-size: 2rem;
+    color: #fff;
+    background-color: #4338CA;
+    width: 23rem;
+    margin-top: 5rem;
+    padding: 1rem 5rem;
+    border-radius: 3rem;
+}
+
+.franz_img {
+    box-shadow: 1.5rem 1.5rem #4338CA;
+    width: 40%;
+}
+
+
+.firstP {
+    font-size: 2rem;
+    word-spacing: 1rem;
+    color: #4338CA;
+}
+
+.section_ich_bin-franz article h2 {
+    font-size: 6.7rem;
+    width: 41rem;
+}
+
+/* =========================================
+            Main Über mich
+=========================================== */
+
+.section_uberMich {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "uber p"
+        "mich a";
+    justify-items: start;
+    align-items: center;
+    column-gap: 6rem;
+}
+
+.section_uberMich h2 {
+    font-size: 10rem;
+}
+
+.h2_uber {
+    grid: uber;
+    justify-self: center;
+}
+
+.h2_mich {
+    grid-area: mich;
+    justify-self: end;
+
+}
+
+.section_uberMich p {
+    grid-area: p;
+    width: 60%;
+}
+
+.section_uberMich article {
+    grid-area: a;
+    display: flex;
+    gap: 5rem;
+}
+
+
+/* =========================================
+            Main Tech Stack
+=========================================== */
+.tech_stack {
+    padding: 20rem 10rem;
+    background-color: #4338CA;
+}
+
+.tech_stack div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 0.3fr);
+    align-items: end;
+}
+
+.tech_stack div figcaption {
+    color: #ffff;
+}
+
+.tech_stack h2 {
+    font-size: 10rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.tech_stack figure {
+    width: 50%;
+    text-align: center;
+    gap: 1rem;
+}
+
+.tech_stack img {
+    width: 100%;
+    height: 20vh;
+}
+
+/* =========================================
+            Main Werdegang
+=========================================== */
+
+.section_werdegang {
+    margin: 0 6rem;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "h2_werdegang h2_werdegang"
+        "article_berufserfahrung article_ausbildung";
+}
+
+.section_werdegang h2 {
+    grid-area: h2_werdegang;
+    font-size: 10rem;
+}
+
+/* =========================================
+            Main Werdegang Berufserfahrung
+=========================================== */
+
+.article_berufserfahrung {
+    padding: 10rem 2rem 10rem 0rem;
+    grid-area: article_berufserfahrung;
+}
+
+.article_berufserfahrung h2 {
+    font-size: 10rem;
+}
+
+.article_berufserfahrung li,
+.article_berufserfahrung h4 {
+    color: #ffff;
+}
+
+.article_berufserfahrung p {
+    color: #ffff;
+    opacity: 0.5;
+}
+
+.article_berufserfahrung h3 {
+    font-size: 3rem;
+}
+
+
+.article_berufserfahrung div {
+    background-color: #4338CA;
+    margin-bottom: 1rem;
+    border-radius: 25px;
+    padding: 2rem;
+}
+
+/* =========================================
+            Main Werdegang Ausbildung
+=========================================== */
+
+.article_ausbildung {
+    padding: 10rem 0rem 10rem 0;
+    margin-top: 15.8rem;
+    grid-area: article_ausbildung;
+}
+
+.article_ausbildung h2 {
+    font-size: 10rem;
+}
+
+.article_ausbildung h3 {
+    font-size: 3rem;
+}
+
+.article_ausbildung li,
+.article_ausbildung h4 {
+    color: #ffff;
+}
+
+.article_ausbildung p {
+    color: #ffff;
+    opacity: 0.5;
+}
+
+.article_ausbildung div {
+    background-color: #A19CE4;
+    margin-bottom: 1rem;
+    border-radius: 25px;
+    padding: 2rem;
+}
+
+/* =========================================
+            Main Projekte
+=========================================== */
+
+.section_projekte img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.section_projekte {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "projekte_h2 projekte_h2 projekte_h2"
+        "projekt1 projekt2 projekt3"
+        "projekt4 projekt5 projekt6"
+        "projekt7 projekt8 projekt9";
+    gap: 5rem;
+    margin: 8rem;
+    align-items: end;
+}
+
+.section_projekte h2 {
+    grid-area: projekte_h2;
+    font-size: 10rem;
+}
+
+.projekt1 {
+    grid-area: projekt1;
+}
+
+.projekt2 {
+    grid-area: projekt2;
+}
+
+.projekt3 {
+    grid-area: projekt3;
+}
+
+.projekt4 {
+    grid-area: projekt4;
+}
+
+.projekt5 {
+    grid-area: projekt5;
+}
+
+.projekt6 {
+    grid-area: projekt6;
+}
+
+.projekt7 {
+    grid-area: projekt7;
+}
+
+.projekt8 {
+    grid-area: projekt8;
+}
+
+.projekt9 {
+    grid-area: projekt9;
+}
+
+/* =========================================
+            Main Testimonials
+=========================================== */
+
+.section_testimonials h2 {
+    font-size: 10rem;
+    margin-left: 8rem;
+}
+
+.section_testimonials p {
+    width: 50%;
+}
+
+.section_testimonials img {
+    width: 10%;
+    margin-right: 5rem;
+}
+
+.section_testimonials article {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 25rem;
+
+
+}
