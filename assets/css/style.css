@@ -17,6 +17,7 @@
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 button {
@@ -57,7 +58,7 @@ header a {
 }
 
 .btn_contact {
-    color: white;
+    color: #fafafa;
     padding: 1rem 5rem;
     border-radius: 25px;
     background-color: #4338CA;
@@ -93,7 +94,7 @@ main {
 
 .section_ich_bin-franz article button {
     font-size: 2rem;
-    color: #fff;
+    color: #fafafa;
     background-color: #4338CA;
     width: 23rem;
     margin-top: 5rem;
@@ -177,12 +178,12 @@ main {
 }
 
 .tech_stack div figcaption {
-    color: #ffff;
+    color: #fafafa;
 }
 
 .tech_stack h2 {
     font-size: 10rem;
-    color: #fff;
+    color: #fafafa;
     margin-bottom: 3rem;
 }
 
@@ -229,13 +230,22 @@ main {
     font-size: 10rem;
 }
 
+.article_berufserfahrung h5 {
+    color: #fafafa;
+}
+
+.article_berufserfahrung ul,
+.article_ausbildung ul {
+    padding: 1rem 0 0 3rem;
+}
+
 .article_berufserfahrung li,
 .article_berufserfahrung h4 {
-    color: #ffff;
+    color: #fafafa;
 }
 
 .article_berufserfahrung p {
-    color: #ffff;
+    color: #fafafa;
     opacity: 0.5;
 }
 
@@ -249,6 +259,7 @@ main {
     margin-bottom: 1rem;
     border-radius: 25px;
     padding: 2rem;
+    height: 22.5rem;
 }
 
 /* =========================================
@@ -265,25 +276,30 @@ main {
     font-size: 10rem;
 }
 
+.article_ausbildung h5 {
+    color: #fafafa;
+}
+
 .article_ausbildung h3 {
     font-size: 3rem;
 }
 
 .article_ausbildung li,
 .article_ausbildung h4 {
-    color: #ffff;
+    color: #fafafa;
 }
 
 .article_ausbildung p {
-    color: #ffff;
+    color: #fafafa;
     opacity: 0.5;
 }
 
 .article_ausbildung div {
-    background-color: #A19CE4;
+    background-color: #7972d9;
     margin-bottom: 1rem;
     border-radius: 25px;
     padding: 2rem;
+    height: 18rem;
 }
 
 /* =========================================
@@ -313,6 +329,13 @@ main {
     grid-area: projekte_h2;
     font-size: 10rem;
 }
+
+.section_projekte figcaption {
+    text-align: center;
+    padding-top: 0.5rem;
+    text-decoration: none;
+}
+
 
 .projekt1 {
     grid-area: projekt1;
